@@ -1,0 +1,12 @@
+class MyEx extends Exception {
+    MyEx(String s){ super(s); }
+}
+class Test {
+    public static void main(String[] args) {
+        try{
+            throw new MyEx("Invalid");
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+}
