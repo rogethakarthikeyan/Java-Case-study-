@@ -1,0 +1,8 @@
+class P extends Thread {
+    public void run(){ System.out.println(getPriority()); }
+    public static void main(String[] args) {
+        P t1=new P(); P t2=new P();
+        t1.setPriority(1); t2.setPriority(10);
+        t1.start(); t2.start();
+    }
+}
