@@ -1,0 +1,8 @@
+class College { void c(){System.out.println("College");} }
+class Dept extends College { void d(){System.out.println("Dept");} }
+class Student extends Dept {
+    public static void main(String[] args) {
+        Student s=new Student();
+        s.c(); s.d();
+    }
+}
