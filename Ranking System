@@ -1,0 +1,11 @@
+import java.util.Scanner;
+class SmallestTwo {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(), a[]=new int[n];
+        for(int i=0;i<n;i++) a[i]=sc.nextInt();
+        int s=a[0], ss=Integer.MAX_VALUE;
+        for(int x:a){ if(x<s){ss=s;s=x;} else if(x<ss&&x!=s) ss=x; }
+        System.out.println(s+" "+ss);
+    }
+}
