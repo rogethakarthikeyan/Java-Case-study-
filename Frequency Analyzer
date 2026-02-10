@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Frequency {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(), a[]=new int[n];
+        for(int i=0;i<n;i++) a[i]=sc.nextInt();
+        for(int i=0;i<n;i++){
+            int c=1; boolean v=false;
+            for(int j=i-1;j>=0;j--) if(a[i]==a[j]) v=true;
+            for(int j=i+1;j<n;j++) if(a[i]==a[j]) c++;
+            if(!v) System.out.println(a[i]+" : "+c);
+        }
+    }
+}
