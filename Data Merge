@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class Merge {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt(), m=sc.nextInt();
+        int a[]=new int[n], b[]=new int[m];
+        for(int i=0;i<n;i++) a[i]=sc.nextInt();
+        for(int i=0;i<m;i++) b[i]=sc.nextInt();
+        for(int x:a) System.out.print(x+" ");
+        for(int x:b) System.out.print(x+" ");
+    }
+}
