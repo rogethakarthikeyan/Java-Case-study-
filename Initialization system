@@ -1,0 +1,8 @@
+class Init {
+    Init(){ System.out.println("Default"); }
+    Init(int a){ System.out.println(a); }
+    Init(int a,int b){ System.out.println(a+b); }
+    public static void main(String[] args) {
+        new Init(); new Init(5); new Init(2,3);
+    }
+}
