@@ -1,0 +1,9 @@
+class Interest {
+    double p,r,t;
+    void calc(){ System.out.println((p*r*t)/100); }
+    public static void main(String[] args) {
+        Interest i=new Interest();
+        i.p=1000; i.r=5; i.t=2;
+        i.calc();
+    }
+}
