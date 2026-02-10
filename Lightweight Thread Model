@@ -1,0 +1,9 @@
+class RunTask implements Runnable {
+    public void run(){
+        System.out.println("Runnable Thread");
+    }
+    public static void main(String[] args) {
+        Thread t=new Thread(new RunTask());
+        t.start();
+    }
+}
