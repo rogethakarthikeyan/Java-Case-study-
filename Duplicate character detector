@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class DuplicateChar {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        for(int i=0;i<s.length();i++){
+            boolean f=false;
+            for(int j=0;j<i;j++) if(s.charAt(i)==s.charAt(j)) f=true;
+            if(f) System.out.print(s.charAt(i)+" ");
+        }
+    }
+}
