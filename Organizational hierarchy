@@ -1,0 +1,9 @@
+class Company {
+    void show(){ System.out.println("Company"); }
+}
+class Employee extends Company {
+    public static void main(String[] args) {
+        Employee e=new Employee();
+        e.show();
+    }
+}
