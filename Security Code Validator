@@ -1,0 +1,10 @@
+import java.util.Scanner;
+class Palindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt(), r, rev = 0, t = n;
+        while (n > 0) { r = n % 10; rev = rev * 10 + r; n /= 10; }
+        if (t == rev) System.out.println("Valid Code");
+        else System.out.println("Invalid Code");
+    }
+}
