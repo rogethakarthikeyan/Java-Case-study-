@@ -1,0 +1,10 @@
+interface Pay {
+    void pay();
+}
+class Card implements Pay {
+    public void pay(){ System.out.println("Card Payment"); }
+    public static void main(String[] args) {
+        Pay p=new Card();
+        p.pay();
+    }
+}
